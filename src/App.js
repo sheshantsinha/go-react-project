@@ -10,7 +10,6 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Table from "./Table";
 
 const App = () => {
   useEffect(() => {
@@ -27,21 +26,13 @@ const App = () => {
     Auth.currentAuthenticatedUser({
       bypassCache: false  // Optional, By default is false. If set to true, this call will send a request to Cognito to get the latest user data
     })
-    .then(user => console.log(user, 'ok'))
+    .then(user => alert('User already signed in'))
     .catch(err => console.log(err));
   };
   return (
     <div className="App">
       <SignUp />
       <SignIn />
-      <Router>
-      <Link to="/table">Table</Link>
-      <Switch>
-          <Route path="/table">
-            <Table />
-          </Route>
-       </Switch>
-       </Router>
     </div>
   );
 };

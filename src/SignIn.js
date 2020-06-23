@@ -14,7 +14,7 @@ const SignIn = () => {
         setEmail("");
         setPassword("");
         console.log(session);
-        alert('success')
+        alert('successfully signed in')
         const tokens = {
             accessToken: session.signInUserSession.accessToken.jwtToken,
             idToken: session.signInUserSession.idToken.jwtToken,

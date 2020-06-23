@@ -10,7 +10,7 @@ const SignUp = () => {
     e.preventDefault();
     Auth.signUp({ username: email, password, attributes: { email } })
       .then((data) => {
-        console.log(data);
+        alert("Code sent")
         setWaitingForCode(true);
         setPassword("");
       })
@@ -32,7 +32,7 @@ const SignUp = () => {
   const resendCode = () => {
     Auth.resendSignUp(email)
       .then(() => {
-        console.log("code resent successfully");
+        alert("code resent successfully");
       })
       .catch((e) => {
         console.log(e);
