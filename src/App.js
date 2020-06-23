@@ -1,16 +1,9 @@
-import React, { useEffect, Component } from "react";
+import React, { useEffect} from "react";
 import Amplify, {Auth } from "aws-amplify";
-import logo from "./logo.svg";
 import SignUp from "./SignUp";
 import SignIn from "./SignIn";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
+import PersonList from "./Table";
 const App = () => {
   useEffect(() => {
     Amplify.configure({
@@ -33,6 +26,7 @@ const App = () => {
     <div className="App">
       <SignUp />
       <SignIn />
+      <PersonList />
     </div>
   );
 };
