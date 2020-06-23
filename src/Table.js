@@ -17,7 +17,7 @@ export default class PersonList extends React.Component {
         for (var i = 0; i < persons.length; i++) {
             let temp = {
                 ID: persons[i].ID.N,
-                User: persons[i].User.S, //description
+                User: persons[i].User.S,
                 name: persons[i].name.S,
                 description: persons[i].description.S,
                 User: persons[i].User.S,
