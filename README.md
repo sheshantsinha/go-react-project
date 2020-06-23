@@ -1,6 +1,9 @@
 Set Region, Access key, pool Id
+
 Rest API is working fine for get but not customized for each user. One can see the result in console
+
 npm install 
+
 npm start
 
 Before sign up
