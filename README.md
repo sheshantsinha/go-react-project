@@ -1,8 +1,13 @@
 Set Region, Access key, pool Id
 
-**Rest API is working fine for get but not customized for each user. One can see the result in console**
+**Get API is working fine but add API is not supported so that you can see events of only following email ID but you can sign in with any number of email IDs.**
+
+**xrwmhxrucisgragbtr@ttirv.net, Password:- Hello@123**
+**xrwmhxrucisgragbtr@ttirv.net, Password:- Hello@123**
 
 **This app is responsive for mobile**
+
+**Use Ema
 npm install 
 
 npm start

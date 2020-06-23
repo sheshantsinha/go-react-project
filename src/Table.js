@@ -8,10 +8,11 @@ export default class PersonList extends React.Component {
   }
 
   componentDidMount() {
-          
-    axios.get(`https://i5imc6al18.execute-api.us-east-2.amazonaws.com/deplopment/eventFunction`, { 'Access-Control-Allow-Origin' : '*' })
+    let userEmail = localStorage.getItem('email');
+    if (!userEmail) return null;
+    axios.get(`https://i5imc6al18.execute-api.us-east-2.amazonaws.com/api/eventFunction?email=${userEmail}`)
       .then(res => {
-        const persons = JSON.parse(res.data.body);
+        const persons = res.data;
         console.log(persons)
         let data = []
         for (var i = 0; i < persons.length; i++) {
@@ -28,15 +29,42 @@ export default class PersonList extends React.Component {
             data.push(temp)
         }
         console.log(data)
-        this.setState({ persons });
+        // let elementToRender = []
+        // for (var i = 0; i < data.length; i++) {
+        //     elementToRender.push(`<td>${data[i].name}</td><td>${data[i].description}</td>`)
+        // }
+        const listItems = data.map((element) => 
+            <tr>
+                <td>{element.name}</td>
+                <td>{element.description}</td>
+                <td>{element.status}</td>
+                <td>{element.start_time}</td>
+                <td>{element.stop_time}</td>
+                <td>{element.User}</td>
+            </tr>
+        )
+        //console.log(elementToRender)
+        this.setState({ listItems });
       })
   }
 
   render() {
     return (
-      <ul>
-        Hello
-      </ul>
+      <table>
+          <thead>
+          <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Status</th>
+              <th>Start Time</th>
+              <th>Stop Time</th>
+              <th>Email Id</th>
+          </tr>
+          </thead>
+          <tbody>
+              {this.state.listItems} 
+          </tbody>
+      </table>
     )
   }
 }

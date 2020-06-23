@@ -13,15 +13,14 @@ const SignIn = () => {
       .then((session) => {
         setEmail("");
         setPassword("");
-        console.log(session);
         alert('successfully signed in')
         const tokens = {
             accessToken: session.signInUserSession.accessToken.jwtToken,
             idToken: session.signInUserSession.idToken.jwtToken,
             refreshToken: session.signInUserSession.refreshToken.token
           };
+          localStorage.setItem('email', session.username);
           localStorage.setItem('tokens', JSON.stringify(tokens))
-          //console.log(tokens)
       })
       .catch((err) => {
         console.log(err);
@@ -47,6 +46,7 @@ const SignIn = () => {
         <button type="submit" onClick={signIn}>
           Sign In
         </button>
+        Please refresh page from successful Sign In
       </form>
     </div>
   );
