@@ -8,7 +8,6 @@ Set Region, Access key, pool Id
 
 **This app is responsive for mobile**
 
-**Use Ema
 npm install 
 
 npm start
