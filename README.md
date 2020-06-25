@@ -9,7 +9,7 @@ https://github.com/sheshantsinha/go-backend-project
 
 **xrwmhxrucisgragbtr@ttirv.net, Password:- Hello@123**
 
-**xrwmhxrucisgragbtr@ttirv.net, Password:- Hello@123**
+**elmrygeprubbpzxvnb@ttirv.net, Password:- Hello@123**
 
 **This app is responsive for mobile**
 
