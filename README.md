@@ -7,6 +7,10 @@ Set Region, Access key, pool Id
 https://github.com/sheshantsinha/go-backend-project
 ```
 
+```
+WEB URL :- http://reactappprojectib.s3-website.ap-south-1.amazonaws.com/
+```
+
 **xrwmhxrucisgragbtr@ttirv.net, Password:- Hello@123**
 
 **elmrygeprubbpzxvnb@ttirv.net, Password:- Hello@123**
