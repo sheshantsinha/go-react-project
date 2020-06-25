@@ -13,7 +13,7 @@ WEB URL :- http://reactappprojectib.s3-website.ap-south-1.amazonaws.com/
 
 **xrwmhxrucisgragbtr@ttirv.net, Password:- Hello@123**
 
-**elmrygeprubbpzxvnb@ttirv.net, Password:- Hello@123**
+**vivezcurueddcxzkca@awdrt.net, Password:- Hello@123**
 
 **This app is responsive for mobile**
 
