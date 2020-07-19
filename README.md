@@ -1,21 +1,9 @@
 Set Region, Access key, pool Id
 
-**Get API is working fine but add API is not supported so that you can see events of only following email ID but you can sign in with any number of email IDs.**
-
 **Backend Repo**
 ```
 https://github.com/sheshantsinha/go-backend-project
 ```
-
-```
-WEB URL :- http://reactappprojectib.s3-website.ap-south-1.amazonaws.com/
-```
-
-**xrwmhxrucisgragbtr@ttirv.net, Password:- Hello@123**
-
-**vivezcurueddcxzkca@awdrt.net, Password:- Hello@123**
-
-**This app is responsive for mobile**
 
 npm install 
 
